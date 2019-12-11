@@ -53,9 +53,9 @@ function e_ads_config()
 {
     if(function_exists('config_path'))
     {
-        if(file_exists(config_path('google-ads.php')))
+        if(file_exists(config_path('googleads.php')))
         {
-            $configuration = include(config_path('google-ads.php'));
+            $configuration = include(config_path('googleads.php'));
 
             return $configuration;
         }

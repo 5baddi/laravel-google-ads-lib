@@ -15,7 +15,7 @@ class GoogleAdsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $config_path = function_exists('config_path') ? config_path('google-ads.php') : 'google-ads.php';
+        $config_path = function_exists('config_path') ? config_path('googleads.php') : 'googleads.php';
 
         $this->publishes([
             __DIR__.'/../Config/config.php' => $config_path,

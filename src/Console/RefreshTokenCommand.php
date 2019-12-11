@@ -11,7 +11,7 @@ class RefreshTokenCommand extends Command {
      *
      * @var string
      */
-    protected $signature = 'googleads:token:generate';
+    protected $signature = 'googleads:generate:refresh-token';
 
     /**
      * Description
@@ -50,7 +50,7 @@ class RefreshTokenCommand extends Command {
             return;
         }
 
-        $this->comment('Copy the refresh token in your googleads configuration file (config/google-ads.php)');
+        $this->comment('Copy the refresh token in your googleads configuration file (config/googleads.php)');
 
         // Print refresh token
         $this->line(sprintf(
