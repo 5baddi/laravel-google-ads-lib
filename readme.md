@@ -78,7 +78,7 @@ php artisan googleads:generate:refresh-token
 *   Visit the URL it shows, grant access to your app and input the access token in console.
 *   Then copy the fresh token in `googleads.php` config file.
 
->   Remember to copy that token in the correct section (test/production).Depends on your `env` value.
+>   Remember to copy that token in the correct section (test/production).Depends on your `level` value.
 
 ##  Usage samples
 
@@ -94,7 +94,7 @@ use BADDIGroup\GoogleAds\GoogleAds;
 
 All needed configuration data is took from `googleads.php` config file. But you always may pass new values on the fly if required.
 
-You may override the default environment value calling the env method:
+You may override the default access level value calling the setAccessLevel method:
 
 ```
 $ads->setAccessLevel('test');
