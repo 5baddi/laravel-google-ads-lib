@@ -1,6 +1,6 @@
-# Google Adwords API Lib for Laravel
+# Google Ads API package for Laravel
 
-The package helps you implement the features of your Google Ads / Adwords API.
+A package helps you implement the features of your Google Ads / Adwords API.
 
 ##  Installation
 
