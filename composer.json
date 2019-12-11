@@ -1,12 +1,14 @@
 {
     "name": "5baddi/laravel-google-ads-lib",
-    "description": "Google Adwords API library for Laravel",
-    "keywords": ["google","adwords","ads","laravel", "lib"],
+    "description": "Package helps you implement the features of your Google Ads / Adwords API",
+    "keywords": ["google","adwords","ads","laravel", "lib", "google-ads"],
     "license": "MIT",
+    "version": "0.0.1-dev",
     "authors": [
         {
             "name": "5BADDI",
-            "email": "project@baddi.info"
+            "email": "project@baddi.info",
+            "homepage": "https://baddi.info"
         }
     ],
     "require": {
