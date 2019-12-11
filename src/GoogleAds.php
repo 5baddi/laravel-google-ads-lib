@@ -24,10 +24,10 @@ class GoogleAds
     protected $config;
 
     /**
-     * Environment => test/production
+     * Access level => test/production
      * @var
      */
-    protected $env;
+    protected $accessLevel;
 
     /**
      * oAuth UserRefreshCredentials
@@ -49,13 +49,13 @@ class GoogleAds
 
     /**
      * GoogleAds constructor.
-     * @param null $env
+     * @param null $accessLevel
      */
-    public function __construct($env = null)
+    public function __construct($accessLevel = null)
     {
         $this->config = e_ads_config();
 
-        $this->env = $env ?: $this->config['env'] ;
+        $this->accessLevel = $accessLevel ?: $this->config['level'] ;
     }
 
     /**
@@ -79,9 +79,9 @@ class GoogleAds
     {
         if(!$this->userCredentials){
             $this->session = new AdwordsSession();
-            $this->session->oAuth($this->env);
+            $this->session->oAuth($this->accessLevel);
         }else{
-            $this->session = new AdwordsSession($this->userCredentials,$this->env);
+            $this->session = new AdwordsSession($this->userCredentials,$this->accessLevel);
         }
 
 
@@ -213,24 +213,24 @@ class GoogleAds
     }
 
     /**
-     * Set the environment to work with.
+     * Set the access level of the current account manager.
      *
-     * @param $env
+     * @param $accessLevel
      * @return $this
      */
-    public function env($env){
-        $this->env = $env;
+    public function setAccessLevel($accessLevel){
+        $this->accessLevel = $accessLevel;
 
         return $this;
     }
 
     /**
-     * Get the environment.
+     * Get the access level of current account manager.
      * @return null
      */
-    public function getEnv()
+    public function getAccessLevel()
     {
-        return $this->env;
+        return $this->accessLevel;
     }
 
 }

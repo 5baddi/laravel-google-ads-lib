@@ -1,13 +1,13 @@
-# Google Adwords API for Laravel
+# Google Adwords API Lib for Laravel
 
-Simple and easy to use API for your Google Adwords.
+The package helps you implement the features of your Google Ads / Adwords API.
 
 ##  Installation
 
 ##### Type in console:
 
 ```
-composer require edujugon/laravel-google-ads
+composer require 5baddi/laravel-google-ads-lib
 ```
 
 ##### Laravel 5.5 or higher?
@@ -38,14 +38,14 @@ Then you don't have to either register or add the alias, this package uses Packa
 php artisan vendor:publish --provider="BADDIGroup\GoogleAds\Providers\GoogleAdsServiceProvider" --tag="config"
 ```
 
-The above command will generate a new file under your laravel app config folder called `google-ads.php`
+The above command will generate a new file under your laravel app config folder called `googleads.php`
 
 ##  Configuration
 
-Update the `google-ads.php` file with your data.
+Update the `googleads.php` file with your data.
 
 ```
-'env' => 'test',
+'level' => 'test',
 'production' => [
     'developerToken' => "YOUR-DEV-TOKEN",
     'clientCustomerId' => "CLIENT-CUSTOMER-ID",
@@ -63,20 +63,20 @@ Update the `google-ads.php` file with your data.
     'refreshToken' => "REFRESH-TOKEN"
 ],
 ```
->   'env' key accepts one of the following values: test / production
+>   'level' key accepts one of the following values: test / production
 
 ##  Generate refresh token
 
->   Notice that it will take the `clientID` and `clientSecret` from `google-ads.php` config file based on the `env` value.
+>   Notice that it will take the `clientID` and `clientSecret` from `googleads.php` config file based on the `level` value.
 
 Type in console:
 
 ```
-php artisan googleads:token:generate
+php artisan googleads:generate:refresh-token
 ```
 
 *   Visit the URL it shows, grant access to your app and input the access token in console.
-*   Then copy the fresh token in `google-ads.php` config file.
+*   Then copy the fresh token in `googleads.php` config file.
 
 >   Remember to copy that token in the correct section (test/production).Depends on your `env` value.
 
@@ -92,18 +92,18 @@ $ads = new GoogleAds();
 use BADDIGroup\GoogleAds\GoogleAds;
 ```
 
-All needed configuration data is took from `google-ads.php` config file. But you always may pass new values on the fly if required.
+All needed configuration data is took from `googleads.php` config file. But you always may pass new values on the fly if required.
 
 You may override the default environment value calling the env method:
 
 ```
-$ads->env('test');
+$ads->setAccessLevel('test');
 ```
 
-Also, you may get the env value by getEnv method:
+Also, you may get the access level value by getAccessLevel method:
 
 ```
-$ads->getEnv();
+$ads->getAccessLevel();
 ```
 
 If need to override the oAuth details, just call the oAuth method like so:
@@ -129,7 +129,7 @@ $ads->session([
 All the above methods can be chained as follows:
 
 ```
-$ads->env('test')
+$ads->setAccessLevel('test')
     ->oAuth([
         'clientId' => 'test',
         'clientSecret' => 'test',
