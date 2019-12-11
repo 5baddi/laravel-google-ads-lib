@@ -1,12 +1,12 @@
 {
-    "name": "edujugon/laravel-google-ads",
-    "description": "Google Adwords API for Laravel",
-    "keywords": ["google","adwords","ads","laravel"],
+    "name": "5baddi/laravel-google-ads-lib",
+    "description": "Google Adwords API library for Laravel",
+    "keywords": ["google","adwords","ads","laravel", "lib"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Eduardo Marcos",
-            "email": "edujugon@gmail.com"
+            "name": "5BADDI",
+            "email": "project@baddi.info"
         }
     ],
     "require": {
