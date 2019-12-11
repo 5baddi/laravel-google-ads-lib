@@ -14,9 +14,9 @@ class GoogleAdsTest extends TestCase {
 
         $ads = new GoogleAds();
 
-        $ads->env('test');
+        $ads->setAccessLevel('test');
 
-        $this->assertEquals('test',$ads->getEnv());
+        $this->assertEquals('test',$ads->getAccessLevel());
     }
 
     /** @test */
