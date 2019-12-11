@@ -19,7 +19,7 @@ return [
         'clientSecret' => "CLIENT-SECRET",
         'refreshToken' => "REFRESH-TOKEN"
     ],
-    'oAuth2' => [
+    'OAuth2' => [
         'authorizationUri' => 'https://accounts.google.com/o/oauth2/v2/auth',
         'redirectUri' => 'urn:ietf:wg:oauth:2.0:oob',
         'tokenCredentialUri' => 'https://www.googleapis.com/oauth2/v4/token',

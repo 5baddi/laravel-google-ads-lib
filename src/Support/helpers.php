@@ -93,5 +93,5 @@ function e_config_oauth()
 {
     $config = e_ads_config();
 
-    return $config['oAuth2'];
+    return $config['OAuth2'];
 }
