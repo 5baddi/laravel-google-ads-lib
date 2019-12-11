@@ -27,9 +27,9 @@ function google_report($session = null)
  * @param null $session
  * @return Service
  */
-function google_service($service,$session = null)
+function google_service($service, $session = null)
 {
-    return new Service($service,$session);
+    return new Service($service, $session);
 }
 
 
