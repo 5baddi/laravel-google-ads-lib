@@ -27,9 +27,9 @@ class RefreshTokenCommand extends Command {
     public function handle()
     {
 
-        $oAth2 = (new OAuth2())->build();
+        $OAuth2 = (new OAuth2())->build();
 
-        $authorizationUrl = $oAth2->buildFullAuthorizationUri();
+        $authorizationUrl = $OAuth2->buildFullAuthorizationUri();
 
         // Show authorization URL
         $this->line(sprintf(
@@ -39,8 +39,8 @@ class RefreshTokenCommand extends Command {
         // Retrieve token
         $accessToken = $this->ask('After approving the token enter the authorization code here:');
 
-        $oAth2->setCode($accessToken);
-        $authToken = $oAth2->fetchAuthToken();
+        $OAuth2->setCode($accessToken);
+        $authToken = $OAuth2->fetchAuthToken();
 
         if (!array_key_exists('refresh_token', $authToken)) {
             $this->error('Couldn\'t find refresh_token key in the response.');
