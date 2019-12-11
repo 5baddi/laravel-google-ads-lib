@@ -1,8 +1,8 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Edujugon\GoogleAds\GoogleAds;
-use Edujugon\GoogleAds\Reports\MyReport;
+use BADDIGroup\GoogleAds\GoogleAds;
+use BADDIGroup\GoogleAds\Reports\MyReport;
 use Google\AdsApi\AdWords\v201809\cm\AdGroupService;
 use Google\AdsApi\AdWords\v201809\cm\CampaignService;
 
@@ -71,7 +71,7 @@ class GoogleAdsTest extends TestCase {
 
         $campaigns = $ads->service(CampaignService::class)->select(['Id'])->get();
 
-        $this->assertInstanceOf(\Edujugon\GoogleAds\Services\ServiceCollection::class,$campaigns);
+        $this->assertInstanceOf(\BADDIGroup\GoogleAds\Services\ServiceCollection::class,$campaigns);
     }
 
     /** @test */
@@ -91,7 +91,7 @@ class GoogleAdsTest extends TestCase {
 
         $adGroup = $ads->session()->adGroupService()->get();
 
-        $this->assertInstanceOf(\Edujugon\GoogleAds\Services\ServiceCollection::class,$adGroup);
+        $this->assertInstanceOf(\BADDIGroup\GoogleAds\Services\ServiceCollection::class,$adGroup);
     }
 
     /** @test */
@@ -101,7 +101,7 @@ class GoogleAdsTest extends TestCase {
 
         $adGroup = $ads->adGroupAdService()->get();
 
-        $this->assertInstanceOf(\Edujugon\GoogleAds\Services\ServiceCollection::class,$adGroup);
+        $this->assertInstanceOf(\BADDIGroup\GoogleAds\Services\ServiceCollection::class,$adGroup);
     }
 
     /** @test */
@@ -111,7 +111,7 @@ class GoogleAdsTest extends TestCase {
 
         $adGroup = $ads->campaignService()->get();
 
-        $this->assertInstanceOf(\Edujugon\GoogleAds\Services\ServiceCollection::class,$adGroup);
+        $this->assertInstanceOf(\BADDIGroup\GoogleAds\Services\ServiceCollection::class,$adGroup);
     }
 
 
@@ -134,7 +134,7 @@ class GoogleAdsTest extends TestCase {
     {
         $ads = new GoogleAds();
 
-        $this->assertInstanceOf(\Edujugon\GoogleAds\Reports\Report::class,$ads->report());
+        $this->assertInstanceOf(\BADDIGroup\GoogleAds\Reports\Report::class,$ads->report());
     }
 
     /** @test */

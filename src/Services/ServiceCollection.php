@@ -7,7 +7,7 @@
  * Time: 12:34
  */
 
-namespace Edujugon\GoogleAds\Services;
+namespace BADDIGroup\GoogleAds\Services;
 
 use Google\AdsApi\AdWords\v201809\cm\AdGroupAdOperation;
 use Google\AdsApi\AdWords\v201809\cm\AdGroupAdService;

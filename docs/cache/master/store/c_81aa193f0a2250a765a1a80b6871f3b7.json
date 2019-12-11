@@ -1,12 +1,12 @@
 {
-    "name": "Edujugon\\GoogleAds\\Session\\AdwordsSession",
+    "name": "BADDIGroup\\GoogleAds\\Session\\AdwordsSession",
     "line": 15,
     "short_desc": "",
     "long_desc": "",
     "hint": null,
     "tags": [],
-    "namespace": "Edujugon\\GoogleAds\\Session",
-    "file": "\/Users\/Edujugon\/Code\/Documentation\/Documentator\/google-ads\/..\/..\/..\/OpenSource\/google-ads\/src\/Session\/AdwordsSession.php",
+    "namespace": "BADDIGroup\\GoogleAds\\Session",
+    "file": "\/Users\/BADDIGroup\/Code\/Documentation\/Documentator\/google-ads\/..\/..\/..\/OpenSource\/google-ads\/src\/Session\/AdwordsSession.php",
     "relative_file": "\/src\/Session\/AdwordsSession.php",
     "hash": "b421b5eeeb95239e0558e74f24ba84c88ffb21ac",
     "parent": null,
@@ -14,7 +14,7 @@
     "is_trait": false,
     "is_interface": false,
     "aliases": {
-        "OAuth2": "Edujugon\\GoogleAds\\Auth\\OAuth2",
+        "OAuth2": "BADDIGroup\\GoogleAds\\Auth\\OAuth2",
         "AdWordsSessionBuilder": "Google\\AdsApi\\AdWords\\AdWordsSessionBuilder"
     },
     "errors": [],
@@ -101,7 +101,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "Edujugon\\GoogleAds\\Session\\$this",
+                    "BADDIGroup\\GoogleAds\\Session\\$this",
                     false
                 ]
             ],

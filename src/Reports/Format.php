@@ -7,10 +7,10 @@
  * Time: 10:45
  */
 
-namespace Edujugon\GoogleAds\Reports;
+namespace BADDIGroup\GoogleAds\Reports;
 
 
-use Edujugon\GoogleAds\Exceptions\ReportFormat;
+use BADDIGroup\GoogleAds\Exceptions\ReportFormat;
 use Google\AdsApi\AdWords\Reporting\v201809\DownloadFormat;
 use ReflectionClass;
 

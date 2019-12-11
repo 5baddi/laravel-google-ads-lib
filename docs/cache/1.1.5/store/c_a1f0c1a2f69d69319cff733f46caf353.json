@@ -1,12 +1,12 @@
 {
-    "name": "Edujugon\\GoogleAds\\Providers\\GoogleAdsServiceProvider",
+    "name": "BADDIGroup\\GoogleAds\\Providers\\GoogleAdsServiceProvider",
     "line": 9,
     "short_desc": "",
     "long_desc": "",
     "hint": null,
     "tags": [],
-    "namespace": "Edujugon\\GoogleAds\\Providers",
-    "file": "\/Users\/Edujugon\/Code\/Documentation\/Documentator\/google-ads\/..\/..\/..\/OpenSource\/google-ads\/src\/Providers\/GoogleAdsServiceProvider.php",
+    "namespace": "BADDIGroup\\GoogleAds\\Providers",
+    "file": "\/Users\/BADDIGroup\/Code\/Documentation\/Documentator\/google-ads\/..\/..\/..\/OpenSource\/google-ads\/src\/Providers\/GoogleAdsServiceProvider.php",
     "relative_file": "\/src\/Providers\/GoogleAdsServiceProvider.php",
     "hash": "d0fc5bbefb01f7f367304186256e5c9cc9fe5703",
     "parent": "Illuminate\\Support\\ServiceProvider",
@@ -14,8 +14,8 @@
     "is_trait": false,
     "is_interface": false,
     "aliases": {
-        "RefreshTokenCommand": "Edujugon\\GoogleAds\\Console\\RefreshTokenCommand",
-        "GoogleAds": "Edujugon\\GoogleAds\\GoogleAds",
+        "RefreshTokenCommand": "BADDIGroup\\GoogleAds\\Console\\RefreshTokenCommand",
+        "GoogleAds": "BADDIGroup\\GoogleAds\\GoogleAds",
         "ServiceProvider": "Illuminate\\Support\\ServiceProvider"
     },
     "errors": [],

@@ -1,12 +1,12 @@
 {
-    "name": "Edujugon\\GoogleAds\\Reports\\Fields",
+    "name": "BADDIGroup\\GoogleAds\\Reports\\Fields",
     "line": 16,
     "short_desc": "",
     "long_desc": "",
     "hint": null,
     "tags": [],
-    "namespace": "Edujugon\\GoogleAds\\Reports",
-    "file": "\/Users\/Edujugon\/Code\/Documentation\/Documentator\/google-ads\/..\/..\/..\/OpenSource\/google-ads\/src\/Reports\/Fields.php",
+    "namespace": "BADDIGroup\\GoogleAds\\Reports",
+    "file": "\/Users\/BADDIGroup\/Code\/Documentation\/Documentator\/google-ads\/..\/..\/..\/OpenSource\/google-ads\/src\/Reports\/Fields.php",
     "relative_file": "\/src\/Reports\/Fields.php",
     "hash": "74f693ee13a34343b317cab7b3e155393e928da3",
     "parent": null,
@@ -14,7 +14,7 @@
     "is_trait": false,
     "is_interface": false,
     "aliases": {
-        "AdwordsSession": "Edujugon\\GoogleAds\\Session\\AdwordsSession",
+        "AdwordsSession": "BADDIGroup\\GoogleAds\\Session\\AdwordsSession",
         "AdWordsServices": "Google\\AdsApi\\AdWords\\AdWordsServices",
         "ReportDefinitionService": "Google\\AdsApi\\AdWords\\v201702\\cm\\ReportDefinitionService"
     },
@@ -150,7 +150,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "Edujugon\\GoogleAds\\Reports\\$this",
+                    "BADDIGroup\\GoogleAds\\Reports\\$this",
                     false
                 ]
             ],
@@ -257,7 +257,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "Edujugon\\GoogleAds\\Reports\\$this",
+                    "BADDIGroup\\GoogleAds\\Reports\\$this",
                     false
                 ]
             ],

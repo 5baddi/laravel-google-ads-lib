@@ -7,9 +7,9 @@
  * Time: 9:07
  */
 
-namespace Edujugon\GoogleAds\Reports;
+namespace BADDIGroup\GoogleAds\Reports;
 
-use Edujugon\GoogleAds\Session\AdwordsSession;
+use BADDIGroup\GoogleAds\Session\AdwordsSession;
 use Google\AdsApi\AdWords\AdWordsServices;
 use Google\AdsApi\AdWords\v201809\cm\ReportDefinitionService;
 

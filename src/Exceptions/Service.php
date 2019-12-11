@@ -7,7 +7,7 @@
  * Time: 17:24
  */
 
-namespace Edujugon\GoogleAds\Exceptions;
+namespace BADDIGroup\GoogleAds\Exceptions;
 
 
 use Exception;

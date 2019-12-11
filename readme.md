@@ -19,7 +19,7 @@ Then you don't have to either register or add the alias, this package uses Packa
 ```
 'providers' => array(
         ...
-        Edujugon\GoogleAds\Providers\GoogleAdsServiceProvider::class
+        BADDIGroup\GoogleAds\Providers\GoogleAdsServiceProvider::class
     )
 ```
 
@@ -28,14 +28,14 @@ Then you don't have to either register or add the alias, this package uses Packa
 ```
 'aliases' => array(
         ...
-        'GoogleAds' => Edujugon\GoogleAds\Facades\GoogleAds::class,
+        'GoogleAds' => BADDIGroup\GoogleAds\Facades\GoogleAds::class,
     )
 ```
 
 ##### Publish the package's configuration file to the application's own config directory.
 
 ```
-php artisan vendor:publish --provider="Edujugon\GoogleAds\Providers\GoogleAdsServiceProvider" --tag="config"
+php artisan vendor:publish --provider="BADDIGroup\GoogleAds\Providers\GoogleAdsServiceProvider" --tag="config"
 ```
 
 The above command will generate a new file under your laravel app config folder called `google-ads.php`
@@ -89,7 +89,7 @@ $ads = new GoogleAds();
 ```
 >   Do not forget to put at the top of the file the use statement:
 ```
-use Edujugon\GoogleAds\GoogleAds;
+use BADDIGroup\GoogleAds\GoogleAds;
 ```
 
 All needed configuration data is took from `google-ads.php` config file. But you always may pass new values on the fly if required.
@@ -273,7 +273,7 @@ or use the global helper like follows:
 $report = google_report();
 ```
 
-It will return an instance of `Edujugon\GoogleAds\Reports\Report`
+It will return an instance of `BADDIGroup\GoogleAds\Reports\Report`
 
 Now, you have a set of method to prepare the google ads report:
 
@@ -314,7 +314,7 @@ Want to exclude any field? Just do it like follows:
 ```
 $obj = $ads->report()
            ->from('SHOPPING_PERFORMANCE_REPORT')
-           ->select(\Edujugon\GoogleAds\Facades\GoogleAds::fields()->of('SHOPPING_PERFORMANCE_REPORT')->asList())
+           ->select(\BADDIGroup\GoogleAds\Facades\GoogleAds::fields()->of('SHOPPING_PERFORMANCE_REPORT')->asList())
            ->except('SearchImpressionShare','ExternalConversionSource','Ctr','Cost','Date','Week','Year','AverageCpc','Clicks','ClickType','ConversionCategoryName','ConversionTrackerId','ConversionTypeName')
             ->getAsObj();
 ```

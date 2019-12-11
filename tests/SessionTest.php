@@ -1,8 +1,8 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Edujugon\GoogleAds\Auth\OAuth2;
-use Edujugon\GoogleAds\Session\AdwordsSession;
+use BADDIGroup\GoogleAds\Auth\OAuth2;
+use BADDIGroup\GoogleAds\Session\AdwordsSession;
 
 
 
@@ -14,7 +14,7 @@ class SessionTest extends TestCase {
         // Generate a refreshable OAuth2 credential for authentication.
         $oAuth2Credential = (new OAuth2())->build();
 
-        $session = (new Edujugon\GoogleAds\Session\AdwordsSession($oAuth2Credential))->build();
+        $session = (new BADDIGroup\GoogleAds\Session\AdwordsSession($oAuth2Credential))->build();
 
         $this->assertInstanceOf(Google\AdsApi\AdWords\AdWordsSession::class,$session);
     }

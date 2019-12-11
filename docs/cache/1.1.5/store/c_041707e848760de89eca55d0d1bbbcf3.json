@@ -1,12 +1,12 @@
 {
-    "name": "Edujugon\\GoogleAds\\Reports\\Report",
+    "name": "BADDIGroup\\GoogleAds\\Reports\\Report",
     "line": 17,
     "short_desc": "",
     "long_desc": "",
     "hint": null,
     "tags": [],
-    "namespace": "Edujugon\\GoogleAds\\Reports",
-    "file": "\/Users\/Edujugon\/Code\/Documentation\/Documentator\/google-ads\/..\/..\/..\/OpenSource\/google-ads\/src\/Reports\/Report.php",
+    "namespace": "BADDIGroup\\GoogleAds\\Reports",
+    "file": "\/Users\/BADDIGroup\/Code\/Documentation\/Documentator\/google-ads\/..\/..\/..\/OpenSource\/google-ads\/src\/Reports\/Report.php",
     "relative_file": "\/src\/Reports\/Report.php",
     "hash": "2045e40b696dbce1bdb2e63ec55b2cf7c1a15771",
     "parent": null,
@@ -14,7 +14,7 @@
     "is_trait": false,
     "is_interface": false,
     "aliases": {
-        "AdwordsSession": "Edujugon\\GoogleAds\\Session\\AdwordsSession",
+        "AdwordsSession": "BADDIGroup\\GoogleAds\\Session\\AdwordsSession",
         "ReportDownloader": "Google\\AdsApi\\AdWords\\Reporting\\v201702\\ReportDownloader",
         "ApiException": "Google\\AdsApi\\AdWords\\v201702\\cm\\ApiException"
     },
@@ -281,7 +281,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "Edujugon\\GoogleAds\\Reports\\$this",
+                    "BADDIGroup\\GoogleAds\\Reports\\$this",
                     false
                 ]
             ],
@@ -312,7 +312,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "Edujugon\\GoogleAds\\Reports\\$this",
+                    "BADDIGroup\\GoogleAds\\Reports\\$this",
                     false
                 ]
             ],
@@ -343,7 +343,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "Edujugon\\GoogleAds\\Reports\\$this",
+                    "BADDIGroup\\GoogleAds\\Reports\\$this",
                     false
                 ]
             ],
@@ -374,7 +374,7 @@
             "long_desc": "dates format 'Ymd' => e.g. 20170112,20171020",
             "hint": [
                 [
-                    "Edujugon\\GoogleAds\\Reports\\$this",
+                    "BADDIGroup\\GoogleAds\\Reports\\$this",
                     false
                 ]
             ],
@@ -384,7 +384,7 @@
             "is_by_ref": "",
             "exceptions": [
                 [
-                    "\\Edujugon\\GoogleAds\\Exceptions\\Report",
+                    "\\BADDIGroup\\GoogleAds\\Exceptions\\Report",
                     ""
                 ]
             ],
@@ -421,7 +421,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "Edujugon\\GoogleAds\\Reports\\$this",
+                    "BADDIGroup\\GoogleAds\\Reports\\$this",
                     false
                 ]
             ],
@@ -452,7 +452,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "Edujugon\\GoogleAds\\Reports\\$this",
+                    "BADDIGroup\\GoogleAds\\Reports\\$this",
                     false
                 ]
             ],
@@ -490,7 +490,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "\\Edujugon\\GoogleAds\\Reports\\MyReport",
+                    "\\BADDIGroup\\GoogleAds\\Reports\\MyReport",
                     false
                 ]
             ],
@@ -528,7 +528,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "\\Edujugon\\GoogleAds\\Reports\\Stream",
+                    "\\BADDIGroup\\GoogleAds\\Reports\\Stream",
                     false
                 ]
             ],
@@ -594,7 +594,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "Edujugon\\GoogleAds\\Reports\\$this",
+                    "BADDIGroup\\GoogleAds\\Reports\\$this",
                     false
                 ]
             ],

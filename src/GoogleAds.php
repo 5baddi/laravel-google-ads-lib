@@ -1,17 +1,17 @@
 <?php
-namespace Edujugon\GoogleAds;
+namespace BADDIGroup\GoogleAds;
 
 
-use Edujugon\GoogleAds\Auth\OAuth2;
-use Edujugon\GoogleAds\Reports\Fields;
-use Edujugon\GoogleAds\Reports\Format;
-use Edujugon\GoogleAds\Reports\Report;
-use Edujugon\GoogleAds\Reports\ReportTypes;
-use Edujugon\GoogleAds\Services\AdGroup;
-use Edujugon\GoogleAds\Services\AdGroupAd;
-use Edujugon\GoogleAds\Services\Campaign;
-use Edujugon\GoogleAds\Services\Service;
-use Edujugon\GoogleAds\Session\AdwordsSession;
+use BADDIGroup\GoogleAds\Auth\OAuth2;
+use BADDIGroup\GoogleAds\Reports\Fields;
+use BADDIGroup\GoogleAds\Reports\Format;
+use BADDIGroup\GoogleAds\Reports\Report;
+use BADDIGroup\GoogleAds\Reports\ReportTypes;
+use BADDIGroup\GoogleAds\Services\AdGroup;
+use BADDIGroup\GoogleAds\Services\AdGroupAd;
+use BADDIGroup\GoogleAds\Services\Campaign;
+use BADDIGroup\GoogleAds\Services\Service;
+use BADDIGroup\GoogleAds\Session\AdwordsSession;
 
 class GoogleAds
 {
@@ -195,7 +195,7 @@ class GoogleAds
     /**
      * Get the session.
      *
-     * @return \Edujugon\GoogleAds\Session\AdwordsSession
+     * @return \BADDIGroup\GoogleAds\Session\AdwordsSession
      */
     public function getSession()
     {

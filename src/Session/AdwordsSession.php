@@ -7,9 +7,9 @@
  * Time: 13:27
  */
 
-namespace Edujugon\GoogleAds\Session;
+namespace BADDIGroup\GoogleAds\Session;
 
-use Edujugon\GoogleAds\Auth\OAuth2;
+use BADDIGroup\GoogleAds\Auth\OAuth2;
 use Google\AdsApi\AdWords\AdWordsSessionBuilder;
 
 class AdwordsSession

@@ -7,7 +7,7 @@
  * Time: 13:01
  */
 
-namespace Edujugon\GoogleAds\Exceptions;
+namespace BADDIGroup\GoogleAds\Exceptions;
 use Exception;
 
 class Report extends \Exception{}

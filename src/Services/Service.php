@@ -7,11 +7,11 @@
  * Time: 17:07
  */
 
-namespace Edujugon\GoogleAds\Services;
+namespace BADDIGroup\GoogleAds\Services;
 
 
-use Edujugon\GoogleAds\Exceptions\Session;
-use Edujugon\GoogleAds\Session\AdwordsSession;
+use BADDIGroup\GoogleAds\Exceptions\Session;
+use BADDIGroup\GoogleAds\Session\AdwordsSession;
 use Google\AdsApi\AdWords\AdWordsServices;
 
 class Service
@@ -181,14 +181,14 @@ class Service
      * Set the service
      *
      * @param $service
-     * @throws \Edujugon\GoogleAds\Exceptions\Service
+     * @throws \BADDIGroup\GoogleAds\Exceptions\Service
      */
     private function setService($service)
     {
         try {
             $this->service = $this->adWordsServices->get($this->session, $service);
         } catch (\Exception $e) {
-            throw new \Edujugon\GoogleAds\Exceptions\Service("The service '$service' is not available. Please pass a valid service");
+            throw new \BADDIGroup\GoogleAds\Exceptions\Service("The service '$service' is not available. Please pass a valid service");
         }
 
     }

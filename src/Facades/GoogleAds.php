@@ -1,6 +1,6 @@
-<?php namespace Edujugon\GoogleAds\Facades;
+<?php namespace BADDIGroup\GoogleAds\Facades;
 
-use Edujugon\GoogleAds\GoogleAds as AliasGoogleAds;
+use BADDIGroup\GoogleAds\GoogleAds as AliasGoogleAds;
 use Illuminate\Support\Facades\Facade;
 
 class GoogleAds extends Facade {

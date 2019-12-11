@@ -1,6 +1,6 @@
 <?php
 
-namespace Edujugon\GoogleAds\Auth;
+namespace BADDIGroup\GoogleAds\Auth;
 
 
 use Google\Auth\CredentialsLoader;

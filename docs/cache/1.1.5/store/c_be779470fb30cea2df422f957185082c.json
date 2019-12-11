@@ -1,12 +1,12 @@
 {
-    "name": "Edujugon\\GoogleAds\\Reports\\ReportTypes",
+    "name": "BADDIGroup\\GoogleAds\\Reports\\ReportTypes",
     "line": 16,
     "short_desc": "",
     "long_desc": "",
     "hint": null,
     "tags": [],
-    "namespace": "Edujugon\\GoogleAds\\Reports",
-    "file": "\/Users\/Edujugon\/Code\/Documentation\/Documentator\/google-ads\/..\/..\/..\/OpenSource\/google-ads\/src\/Reports\/ReportTypes.php",
+    "namespace": "BADDIGroup\\GoogleAds\\Reports",
+    "file": "\/Users\/BADDIGroup\/Code\/Documentation\/Documentator\/google-ads\/..\/..\/..\/OpenSource\/google-ads\/src\/Reports\/ReportTypes.php",
     "relative_file": "\/src\/Reports\/ReportTypes.php",
     "hash": "db231c64eea6dac9995e02e97bc90949cee1c9d1",
     "parent": null,
@@ -15,7 +15,7 @@
     "is_interface": false,
     "aliases": {
         "ReportDefinitionReportType": "Google\\AdsApi\\AdWords\\v201702\\cm\\ReportDefinitionReportType",
-        "ReportException": "Edujugon\\GoogleAds\\Exceptions\\ReportTypes",
+        "ReportException": "BADDIGroup\\GoogleAds\\Exceptions\\ReportTypes",
         "ReflectionClass": "ReflectionClass"
     },
     "errors": [],
@@ -78,7 +78,7 @@
             "is_by_ref": "",
             "exceptions": [
                 [
-                    "\\Edujugon\\GoogleAds\\Exceptions\\ReportTypes",
+                    "\\BADDIGroup\\GoogleAds\\Exceptions\\ReportTypes",
                     ""
                 ]
             ],
@@ -140,7 +140,7 @@
             "is_by_ref": "",
             "exceptions": [
                 [
-                    "\\Edujugon\\GoogleAds\\Exceptions\\ReportTypes",
+                    "\\BADDIGroup\\GoogleAds\\Exceptions\\ReportTypes",
                     ""
                 ]
             ],

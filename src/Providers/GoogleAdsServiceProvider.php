@@ -1,9 +1,9 @@
 <?php
 
-namespace Edujugon\GoogleAds\Providers;
+namespace BADDIGroup\GoogleAds\Providers;
 
-use Edujugon\GoogleAds\Console\RefreshTokenCommand;
-use Edujugon\GoogleAds\GoogleAds;
+use BADDIGroup\GoogleAds\Console\RefreshTokenCommand;
+use BADDIGroup\GoogleAds\GoogleAds;
 use Illuminate\Support\ServiceProvider;
 
 class GoogleAdsServiceProvider extends ServiceProvider

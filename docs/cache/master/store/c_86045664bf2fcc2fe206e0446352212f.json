@@ -1,12 +1,12 @@
 {
-    "name": "Edujugon\\GoogleAds\\GoogleAds",
+    "name": "BADDIGroup\\GoogleAds\\GoogleAds",
     "line": 16,
     "short_desc": "",
     "long_desc": "",
     "hint": null,
     "tags": [],
-    "namespace": "Edujugon\\GoogleAds",
-    "file": "\/Users\/Edujugon\/Code\/Documentation\/Documentator\/google-ads\/..\/..\/..\/OpenSource\/google-ads\/src\/GoogleAds.php",
+    "namespace": "BADDIGroup\\GoogleAds",
+    "file": "\/Users\/BADDIGroup\/Code\/Documentation\/Documentator\/google-ads\/..\/..\/..\/OpenSource\/google-ads\/src\/GoogleAds.php",
     "relative_file": "\/src\/GoogleAds.php",
     "hash": "9bbaf324a2d4ee83533ea880c006ee2a49b2bd43",
     "parent": null,
@@ -14,16 +14,16 @@
     "is_trait": false,
     "is_interface": false,
     "aliases": {
-        "OAuth2": "Edujugon\\GoogleAds\\Auth\\OAuth2",
-        "Fields": "Edujugon\\GoogleAds\\Reports\\Fields",
-        "Format": "Edujugon\\GoogleAds\\Reports\\Format",
-        "Report": "Edujugon\\GoogleAds\\Reports\\Report",
-        "ReportTypes": "Edujugon\\GoogleAds\\Reports\\ReportTypes",
-        "AdGroup": "Edujugon\\GoogleAds\\Services\\AdGroup",
-        "AdGroupAd": "Edujugon\\GoogleAds\\Services\\AdGroupAd",
-        "Campaign": "Edujugon\\GoogleAds\\Services\\Campaign",
-        "Service": "Edujugon\\GoogleAds\\Services\\Service",
-        "AdwordsSession": "Edujugon\\GoogleAds\\Session\\AdwordsSession"
+        "OAuth2": "BADDIGroup\\GoogleAds\\Auth\\OAuth2",
+        "Fields": "BADDIGroup\\GoogleAds\\Reports\\Fields",
+        "Format": "BADDIGroup\\GoogleAds\\Reports\\Format",
+        "Report": "BADDIGroup\\GoogleAds\\Reports\\Report",
+        "ReportTypes": "BADDIGroup\\GoogleAds\\Reports\\ReportTypes",
+        "AdGroup": "BADDIGroup\\GoogleAds\\Services\\AdGroup",
+        "AdGroupAd": "BADDIGroup\\GoogleAds\\Services\\AdGroupAd",
+        "Campaign": "BADDIGroup\\GoogleAds\\Services\\Campaign",
+        "Service": "BADDIGroup\\GoogleAds\\Services\\Service",
+        "AdwordsSession": "BADDIGroup\\GoogleAds\\Session\\AdwordsSession"
     },
     "errors": [],
     "interfaces": [],
@@ -134,7 +134,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "Edujugon\\GoogleAds\\$this",
+                    "BADDIGroup\\GoogleAds\\$this",
                     false
                 ]
             ],
@@ -170,7 +170,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "Edujugon\\GoogleAds\\$this",
+                    "BADDIGroup\\GoogleAds\\$this",
                     false
                 ]
             ],
@@ -206,7 +206,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "\\Edujugon\\GoogleAds\\Reports\\Fields",
+                    "\\BADDIGroup\\GoogleAds\\Reports\\Fields",
                     false
                 ]
             ],
@@ -225,7 +225,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "\\Edujugon\\GoogleAds\\Services\\Service",
+                    "\\BADDIGroup\\GoogleAds\\Services\\Service",
                     false
                 ]
             ],
@@ -261,7 +261,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "\\Edujugon\\GoogleAds\\Services\\AdGroup",
+                    "\\BADDIGroup\\GoogleAds\\Services\\AdGroup",
                     false
                 ]
             ],
@@ -280,7 +280,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "\\Edujugon\\GoogleAds\\Services\\AdGroupAd",
+                    "\\BADDIGroup\\GoogleAds\\Services\\AdGroupAd",
                     false
                 ]
             ],
@@ -299,7 +299,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "\\Edujugon\\GoogleAds\\Services\\Campaign",
+                    "\\BADDIGroup\\GoogleAds\\Services\\Campaign",
                     false
                 ]
             ],
@@ -318,7 +318,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "\\Edujugon\\GoogleAds\\Reports\\Report",
+                    "\\BADDIGroup\\GoogleAds\\Reports\\Report",
                     false
                 ]
             ],
@@ -394,7 +394,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "\\Edujugon\\GoogleAds\\Session\\AdwordsSession",
+                    "\\BADDIGroup\\GoogleAds\\Session\\AdwordsSession",
                     false
                 ]
             ],
@@ -432,7 +432,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "Edujugon\\GoogleAds\\$this",
+                    "BADDIGroup\\GoogleAds\\$this",
                     false
                 ]
             ],

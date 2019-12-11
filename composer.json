@@ -19,7 +19,7 @@
     },
     "autoload": {
       "psr-4": {
-        "Edujugon\\GoogleAds\\": "src/"
+        "BADDIGroup\\GoogleAds\\": "src/"
       },
       "files": [
           "src/Support/helpers.php"
@@ -28,10 +28,10 @@
     "extra": {
       "laravel": {
         "providers": [
-          "Edujugon\\GoogleAds\\Providers\\GoogleAdsServiceProvider"
+          "BADDIGroup\\GoogleAds\\Providers\\GoogleAdsServiceProvider"
         ],
         "aliases": {
-          "GoogleAds": "Edujugon\\GoogleAds\\Facades\\GoogleAds"
+          "GoogleAds": "BADDIGroup\\GoogleAds\\Facades\\GoogleAds"
         }
       }
     },

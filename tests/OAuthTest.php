@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Edujugon\GoogleAds\Auth\OAuth2;
+use BADDIGroup\GoogleAds\Auth\OAuth2;
 
 class OAuthTest extends TestCase {
 

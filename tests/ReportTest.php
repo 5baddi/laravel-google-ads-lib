@@ -1,33 +1,33 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Edujugon\GoogleAds\Reports\Report;
+use BADDIGroup\GoogleAds\Reports\Report;
 
 class ReportTest extends TestCase {
 
     /** @test */
     public function report_fields()
     {
-        $list = (new \Edujugon\GoogleAds\Reports\Fields())->of('CRITERIA_PERFORMANCE_REPORT')->except(['Parameters','AccountCurrencyCode'])->asList();
+        $list = (new \BADDIGroup\GoogleAds\Reports\Fields())->of('CRITERIA_PERFORMANCE_REPORT')->except(['Parameters','AccountCurrencyCode'])->asList();
 
         $this->assertIsArray($list);
-        $this->assertIsArray((new \Edujugon\GoogleAds\Reports\Fields())->reportTypes());
-        $this->assertInstanceOf('stdClass',(new \Edujugon\GoogleAds\Reports\Fields())->of('CRITERIA_PERFORMANCE_REPORT')->asObj());
+        $this->assertIsArray((new \BADDIGroup\GoogleAds\Reports\Fields())->reportTypes());
+        $this->assertInstanceOf('stdClass',(new \BADDIGroup\GoogleAds\Reports\Fields())->of('CRITERIA_PERFORMANCE_REPORT')->asObj());
         $this->assertArrayNotHasKey('Parameter',$list);
     }
 
     /** @test */
     public function format()
     {
-        $this->assertIsArray(\Edujugon\GoogleAds\Reports\Format::getList());
-        $this->assertEquals('CSV',\Edujugon\GoogleAds\Reports\Format::get('csv'));
+        $this->assertIsArray(\BADDIGroup\GoogleAds\Reports\Format::getList());
+        $this->assertEquals('CSV',\BADDIGroup\GoogleAds\Reports\Format::get('csv'));
     }
 
     /** @test */
     public function wrong_format()
     {
-        $this->expectException(\Edujugon\GoogleAds\Exceptions\ReportFormat::class);
-        $this->assertEquals('CSV',\Edujugon\GoogleAds\Reports\Format::get('asdf'));
+        $this->expectException(\BADDIGroup\GoogleAds\Exceptions\ReportFormat::class);
+        $this->assertEquals('CSV',\BADDIGroup\GoogleAds\Reports\Format::get('asdf'));
     }
 
 
@@ -66,7 +66,7 @@ class ReportTest extends TestCase {
             ->where('CampaignId = 752331963')
             ->getAsObj();
 
-        $this->assertInstanceOf(\Edujugon\GoogleAds\Reports\MyReport::class,$obj);
+        $this->assertInstanceOf(\BADDIGroup\GoogleAds\Reports\MyReport::class,$obj);
 
     }
 
@@ -90,6 +90,6 @@ class ReportTest extends TestCase {
             ->where('Cost > 1')
             ->getAsObj();
 
-        $this->assertInstanceOf(\Edujugon\GoogleAds\Reports\MyReport::class,$obj);
+        $this->assertInstanceOf(\BADDIGroup\GoogleAds\Reports\MyReport::class,$obj);
     }
 }

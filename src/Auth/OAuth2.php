@@ -7,7 +7,7 @@
  * Time: 11:50
  */
 
-namespace Edujugon\GoogleAds\Auth;
+namespace BADDIGroup\GoogleAds\Auth;
 
 
 use Google\AdsApi\Common\OAuth2TokenBuilder;

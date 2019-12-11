@@ -6,10 +6,10 @@
  * All function names are prefixed by an "e" to prevent possible conflicts with any framework functions
  *
  */
-use Edujugon\GoogleAds\Exceptions\Config;
-use Edujugon\GoogleAds\Reports\Fields;
-use Edujugon\GoogleAds\Reports\Report;
-use Edujugon\GoogleAds\Services\Service;
+use BADDIGroup\GoogleAds\Exceptions\Config;
+use BADDIGroup\GoogleAds\Reports\Fields;
+use BADDIGroup\GoogleAds\Reports\Report;
+use BADDIGroup\GoogleAds\Services\Service;
 
 /**
  * Get an instance of Report

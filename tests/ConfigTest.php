@@ -18,7 +18,7 @@ class ConfigTest extends TestCase {
     /** @test */
     public function pass_wrong_env()
     {
-        $this->expectException(Edujugon\GoogleAds\Exceptions\Config::class);
+        $this->expectException(BADDIGroup\GoogleAds\Exceptions\Config::class);
         $this->expectExceptionMessage('Please provide a correct environment. Available options: production/test');
 
         e_ads_config_google_ads('nothing');

@@ -7,10 +7,10 @@
  * Time: 9:25
  */
 
-namespace Edujugon\GoogleAds\Reports;
+namespace BADDIGroup\GoogleAds\Reports;
 
 use Google\AdsApi\AdWords\v201809\cm\ReportDefinitionReportType;
-use Edujugon\GoogleAds\Exceptions\ReportTypes as ReportException;
+use BADDIGroup\GoogleAds\Exceptions\ReportTypes as ReportException;
 use ReflectionClass;
 
 abstract class ReportTypes

@@ -1,12 +1,12 @@
 {
-    "name": "Edujugon\\GoogleAds\\Services\\Service",
+    "name": "BADDIGroup\\GoogleAds\\Services\\Service",
     "line": 17,
     "short_desc": "",
     "long_desc": "",
     "hint": null,
     "tags": [],
-    "namespace": "Edujugon\\GoogleAds\\Services",
-    "file": "\/Users\/Edujugon\/Code\/Documentation\/Documentator\/google-ads\/..\/..\/..\/OpenSource\/google-ads\/src\/Services\/Service.php",
+    "namespace": "BADDIGroup\\GoogleAds\\Services",
+    "file": "\/Users\/BADDIGroup\/Code\/Documentation\/Documentator\/google-ads\/..\/..\/..\/OpenSource\/google-ads\/src\/Services\/Service.php",
     "relative_file": "\/src\/Services\/Service.php",
     "hash": "2e0f1a341cc1c2b1227428e8308e85bc6ad84412",
     "parent": null,
@@ -14,8 +14,8 @@
     "is_trait": false,
     "is_interface": false,
     "aliases": {
-        "Session": "Edujugon\\GoogleAds\\Exceptions\\Session",
-        "AdwordsSession": "Edujugon\\GoogleAds\\Session\\AdwordsSession",
+        "Session": "BADDIGroup\\GoogleAds\\Exceptions\\Session",
+        "AdwordsSession": "BADDIGroup\\GoogleAds\\Session\\AdwordsSession",
         "AdWordsServices": "Google\\AdsApi\\AdWords\\AdWordsServices"
     },
     "errors": [],
@@ -177,7 +177,7 @@
                     "long_desc": null,
                     "hint": [
                         [
-                            "\\Edujugon\\GoogleAds\\Services\\Google",
+                            "\\BADDIGroup\\GoogleAds\\Services\\Google",
                             false
                         ]
                     ],
@@ -223,7 +223,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "Edujugon\\GoogleAds\\Services\\$this",
+                    "BADDIGroup\\GoogleAds\\Services\\$this",
                     false
                 ]
             ],
@@ -254,7 +254,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "Edujugon\\GoogleAds\\Services\\$this",
+                    "BADDIGroup\\GoogleAds\\Services\\$this",
                     false
                 ]
             ],
@@ -306,7 +306,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "Edujugon\\GoogleAds\\Services\\$this",
+                    "BADDIGroup\\GoogleAds\\Services\\$this",
                     false
                 ]
             ],
@@ -337,7 +337,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "Edujugon\\GoogleAds\\Services\\$this",
+                    "BADDIGroup\\GoogleAds\\Services\\$this",
                     false
                 ]
             ],
@@ -368,7 +368,7 @@
             "long_desc": "",
             "hint": [
                 [
-                    "\\Edujugon\\GoogleAds\\Services\\ServiceCollection",
+                    "\\BADDIGroup\\GoogleAds\\Services\\ServiceCollection",
                     false
                 ]
             ],

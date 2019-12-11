@@ -7,10 +7,10 @@
  * Time: 10:43
  */
 
-namespace Edujugon\GoogleAds\Reports;
+namespace BADDIGroup\GoogleAds\Reports;
 
 
-use Edujugon\GoogleAds\Session\AdwordsSession;
+use BADDIGroup\GoogleAds\Session\AdwordsSession;
 use Google\AdsApi\AdWords\Reporting\v201809\ReportDownloader;
 use Google\AdsApi\AdWords\v201809\cm\ApiException;
 
@@ -133,12 +133,12 @@ class Report
      * @param $starting
      * @param $ending
      * @return $this
-     * @throws \Edujugon\GoogleAds\Exceptions\Report
+     * @throws \BADDIGroup\GoogleAds\Exceptions\Report
      */
     public function during($starting,$ending)
     {
         if(! is_numeric($starting) || ! is_numeric($ending))
-            throw new \Edujugon\GoogleAds\Exceptions\Report('During clause only accepts the following date format: "Ymd" => e.g. 20170112');
+            throw new \BADDIGroup\GoogleAds\Exceptions\Report('During clause only accepts the following date format: "Ymd" => e.g. 20170112');
 
         $this->during = [$starting,$ending];
 
@@ -187,7 +187,7 @@ class Report
     /**
      * Get the report as an object
      *
-     * @return \Edujugon\GoogleAds\Reports\MyReport
+     * @return \BADDIGroup\GoogleAds\Reports\MyReport
      */
     public function getAsObj()
     {

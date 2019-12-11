@@ -1,12 +1,12 @@
 {
-    "name": "Edujugon\\GoogleAds\\Reports\\Format",
+    "name": "BADDIGroup\\GoogleAds\\Reports\\Format",
     "line": 17,
     "short_desc": "",
     "long_desc": "",
     "hint": null,
     "tags": [],
-    "namespace": "Edujugon\\GoogleAds\\Reports",
-    "file": "\/Users\/Edujugon\/Code\/Documentation\/Documentator\/google-ads\/..\/..\/..\/OpenSource\/google-ads\/src\/Reports\/Format.php",
+    "namespace": "BADDIGroup\\GoogleAds\\Reports",
+    "file": "\/Users\/BADDIGroup\/Code\/Documentation\/Documentator\/google-ads\/..\/..\/..\/OpenSource\/google-ads\/src\/Reports\/Format.php",
     "relative_file": "\/src\/Reports\/Format.php",
     "hash": "24fa5bf529036c9b134d647bfddd3a5ca5279450",
     "parent": null,
@@ -14,7 +14,7 @@
     "is_trait": false,
     "is_interface": false,
     "aliases": {
-        "ReportFormat": "Edujugon\\GoogleAds\\Exceptions\\ReportFormat",
+        "ReportFormat": "BADDIGroup\\GoogleAds\\Exceptions\\ReportFormat",
         "DownloadFormat": "Google\\AdsApi\\AdWords\\Reporting\\v201702\\DownloadFormat",
         "ReflectionClass": "ReflectionClass"
     },
@@ -78,7 +78,7 @@
             "is_by_ref": "",
             "exceptions": [
                 [
-                    "\\Edujugon\\GoogleAds\\Exceptions\\ReportFormat",
+                    "\\BADDIGroup\\GoogleAds\\Exceptions\\ReportFormat",
                     ""
                 ]
             ],
@@ -140,7 +140,7 @@
             "is_by_ref": "",
             "exceptions": [
                 [
-                    "\\Edujugon\\GoogleAds\\Exceptions\\ReportFormat",
+                    "\\BADDIGroup\\GoogleAds\\Exceptions\\ReportFormat",
                     ""
                 ]
             ],

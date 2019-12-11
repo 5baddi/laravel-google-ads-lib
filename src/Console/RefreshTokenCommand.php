@@ -1,7 +1,7 @@
 <?php
-namespace Edujugon\GoogleAds\Console;
+namespace BADDIGroup\GoogleAds\Console;
 
-use Edujugon\GoogleAds\Auth\OAuth2;
+use BADDIGroup\GoogleAds\Auth\OAuth2;
 use Illuminate\Console\Command;
 
 class RefreshTokenCommand extends Command {

@@ -7,7 +7,7 @@
  * Time: 12:25
  */
 
-namespace Edujugon\GoogleAds\Reports;
+namespace BADDIGroup\GoogleAds\Reports;
 
 
 use Illuminate\Support\Collection;

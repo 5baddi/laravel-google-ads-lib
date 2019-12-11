@@ -1,12 +1,12 @@
 {
-    "name": "Edujugon\\GoogleAds\\Console\\RefreshTokenCommand",
+    "name": "BADDIGroup\\GoogleAds\\Console\\RefreshTokenCommand",
     "line": 7,
     "short_desc": "",
     "long_desc": "",
     "hint": null,
     "tags": [],
-    "namespace": "Edujugon\\GoogleAds\\Console",
-    "file": "\/Users\/Edujugon\/Code\/Documentation\/Documentator\/google-ads\/..\/..\/..\/OpenSource\/google-ads\/src\/Console\/RefreshTokenCommand.php",
+    "namespace": "BADDIGroup\\GoogleAds\\Console",
+    "file": "\/Users\/BADDIGroup\/Code\/Documentation\/Documentator\/google-ads\/..\/..\/..\/OpenSource\/google-ads\/src\/Console\/RefreshTokenCommand.php",
     "relative_file": "\/src\/Console\/RefreshTokenCommand.php",
     "hash": "2f05df59066e75389e90859d7b7b9b076b7fa673",
     "parent": "Illuminate\\Console\\Command",
@@ -14,7 +14,7 @@
     "is_trait": false,
     "is_interface": false,
     "aliases": {
-        "OAuth2": "Edujugon\\GoogleAds\\Auth\\OAuth2",
+        "OAuth2": "BADDIGroup\\GoogleAds\\Auth\\OAuth2",
         "Command": "Illuminate\\Console\\Command"
     },
     "errors": [],
