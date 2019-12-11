@@ -375,7 +375,3 @@ $saved = $ads->report()
 ```
 
 > The above code will create a file in the passed path returning true if everything was fine. 
-
-##  API Documentation
-
-[Full API List](https://edujugon.github.io/laravel-google-ads/build/master/Edujugon/GoogleAds/GoogleAds.html)
