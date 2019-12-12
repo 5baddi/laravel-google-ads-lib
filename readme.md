@@ -106,10 +106,10 @@ Also, you may get the access level value by getAccessLevel method:
 $ads->getAccessLevel();
 ```
 
-If need to override the oAuth details, just call the oAuth method like so:
+If need to override the OAuth details, just call the OAuth method like so:
 
 ```
-$ads->oAuth([
+$ads->OAuth([
             'clientId' => 'test',
             'clientSecret' => 'test',
             'refreshToken' => 'TEST'
@@ -130,7 +130,7 @@ All the above methods can be chained as follows:
 
 ```
 $ads->setAccessLevel('test')
-    ->oAuth([
+    ->OAuth([
         'clientId' => 'test',
         'clientSecret' => 'test',
         'refreshToken' => 'TEST'
@@ -167,7 +167,7 @@ or Any google ads services available under `Google\AdsApi\AdWords\v201809\cm` fo
 Also you can use the global helper in order the get an instance of Service.
 
 ```
-$service = google_service(CampaignService::class)
+$service = googleService(CampaignService::class)
 ```
 
 To retrieve a list of campaigns, do like follows:
@@ -270,7 +270,7 @@ $report = $ads->report();
 or use the global helper like follows:
 
 ```
-$report = google_report();
+$report = googleReport();
 ```
 
 It will return an instance of `BADDIGroup\GoogleAds\Reports\Report`

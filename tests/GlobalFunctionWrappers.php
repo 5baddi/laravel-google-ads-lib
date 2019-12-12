@@ -5,21 +5,21 @@ use PHPUnit\Framework\TestCase;
 class GlobalFunctionWrappers extends TestCase{
 
     /** @test */
-    public function get_report_by_global_function_wrapper()
+    public function getReportByGlobalWrapper()
     {
-        $this->assertInstanceOf(\BADDIGroup\GoogleAds\Reports\Report::class,google_report());
+        $this->assertInstanceOf(\BADDIGroup\GoogleAds\Reports\Report::class, googleReport());
     }
 
     /** @test */
-    public function get_service_by_global_function_wrapper()
+    public function getServiceByGlobalWrapper()
     {
-        $this->assertInstanceOf(\BADDIGroup\GoogleAds\Services\Service::class,google_service(\Google\AdsApi\AdWords\v201809\cm\CampaignService::class));
+        $this->assertInstanceOf(\BADDIGroup\GoogleAds\Services\Service::class, googleService(\Google\AdsApi\AdWords\v201809\cm\CampaignService::class));
     }
 
     /** @test */
-    public function get_report_field_class_by_global_function_wrapper()
+    public function getReportFieldClassByGlobalWrapper()
     {
-        $this->assertInstanceOf(\BADDIGroup\GoogleAds\Reports\Fields::class,google_report_fields());
+        $this->assertInstanceOf(\BADDIGroup\GoogleAds\Reports\Fields::class, googleReportFields());
     }
 
 }

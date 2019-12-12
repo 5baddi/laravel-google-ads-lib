@@ -16,7 +16,7 @@ use BADDIGroup\GoogleAds\Services\Service;
  * @param null $session
  * @return Report
  */
-function google_report($session = null)
+function googleReport($session = null)
 {
     return new Report($session);
 }
@@ -27,7 +27,7 @@ function google_report($session = null)
  * @param null $session
  * @return Service
  */
-function google_service($service, $session = null)
+function googleService($service, $session = null)
 {
     return new Service($service, $session);
 }
@@ -39,7 +39,7 @@ function google_service($service, $session = null)
  * @param null $session
  * @return Fields
  */
-function google_report_fields($session = null)
+function googleReportFields($session = null)
 {
     return new Fields($session);
 }
@@ -49,7 +49,7 @@ function google_report_fields($session = null)
  *
  * @return array
  */
-function e_ads_config()
+function adsConfig()
 {
     if(function_exists('config_path'))
     {
@@ -70,28 +70,28 @@ function e_ads_config()
  * Get the adwords configuration based on the environment.
  * If env is not passed as parameter it'll take the env value from config file.
  *
- * @param null $env
+ * @param null $accessLevel
  * @return mixed
  * @throws Config
  */
-function e_ads_config_google_ads($env = null)
+function googleAdsConfig($accessLevel = null)
 {
-    $config = e_ads_config();
+    $config = adsConfig();
 
 
-    if($env && !array_key_exists($env,$config))
-        throw new Config('Please provide a correct environment. Available options: production/test');
+    if(!is_null($accessLevel) && !array_key_exists($accessLevel, $config))
+        throw new Config('Please provide a correct access level. Available options: production/test');
 
-    return $env ? $config[$env] : $config[$config['env']];
+    return !is_null($accessLevel) ? $config[$accessLevel] : $config[$config['level']];
 }
 
 /**
- * Get the oAuth2 configuration
+ * Get the OAuth2 configuration
  * @return mixed
  */
-function e_config_oauth()
+function OAuthConfig()
 {
-    $config = e_ads_config();
+    $config = adsConfig();
 
     return $config['OAuth2'];
 }

@@ -5,22 +5,22 @@ use PHPUnit\Framework\TestCase;
 class ConfigTest extends TestCase {
 
     /** @test */
-    public function load_config_file(){
-        $this->assertIsArray(e_ads_config());
+    public function loadConfigFile(){
+        $this->assertIsArray(adsConfig());
     }
 
     /** @test */
-    public function load_ads_config_by_env()
+    public function loadAdsConfig()
     {
-        $this->assertArrayNotHasKey('production',e_ads_config_google_ads('test'));
+        $this->assertArrayNotHasKey('production', googleAdsConfig('test'));
     }
 
     /** @test */
-    public function pass_wrong_env()
+    public function passWrongAccessLevel()
     {
         $this->expectException(BADDIGroup\GoogleAds\Exceptions\Config::class);
         $this->expectExceptionMessage('Please provide a correct environment. Available options: production/test');
 
-        e_ads_config_google_ads('nothing');
+        googleAdsConfig('nothing');
     }
 }

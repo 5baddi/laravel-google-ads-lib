@@ -30,7 +30,7 @@ class GoogleAds
     protected $accessLevel;
 
     /**
-     * oAuth UserRefreshCredentials
+     * OAuth UserRefreshCredentials
      * @var
      */
     protected $userCredentials;
@@ -64,7 +64,7 @@ class GoogleAds
      * @param array $data
      * @return $this
      */
-    public function oAuth(array $data = [])
+    public function OAuth(array $data = [])
     {
         $this->userCredentials = (new OAuth2())->userCredentials($data);
 
@@ -79,7 +79,7 @@ class GoogleAds
     {
         if(!$this->userCredentials){
             $this->session = new AdwordsSession();
-            $this->session->oAuth($this->accessLevel);
+            $this->session->OAuth($this->accessLevel);
         }else{
             $this->session = new AdwordsSession($this->userCredentials,$this->accessLevel);
         }

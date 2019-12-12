@@ -9,20 +9,20 @@ use BADDIGroup\GoogleAds\Session\AdwordsSession;
 class SessionTest extends TestCase {
 
     /** @test */
-    public function create_session()
+    public function createSession()
     {
         // Generate a refreshable OAuth2 credential for authentication.
-        $oAuth2Credential = (new OAuth2())->build();
+        $OAuth2Credential = (new OAuth2())->build();
 
-        $session = (new BADDIGroup\GoogleAds\Session\AdwordsSession($oAuth2Credential))->build();
+        $session = (new BADDIGroup\GoogleAds\Session\AdwordsSession($OAuth2Credential))->build();
 
-        $this->assertInstanceOf(Google\AdsApi\AdWords\AdWordsSession::class,$session);
+        $this->assertInstanceOf(Google\AdsApi\AdWords\AdWordsSession::class, $session);
     }
 
     /** @test */
     public function create_session_with_auto_oauth()
     {
-        $session = (new AdwordsSession())->oAuth()->build();
+        $session = (new AdwordsSession())->OAuth()->build();
 
         $this->assertInstanceOf(Google\AdsApi\AdWords\AdWordsSession::class,$session);
     }
@@ -31,7 +31,7 @@ class SessionTest extends TestCase {
     public function pass_params_to_auto_oauth(){
         $env = 'test';
 
-        $session = (new AdwordsSession(null,$env))->oAuth($env,[
+        $session = (new AdwordsSession(null,$env))->OAuth($env,[
             'clientId' => 'test',
             'clientSecret' => 'test',
             'refreshToken' => 'TEST'
@@ -43,7 +43,7 @@ class SessionTest extends TestCase {
     /** @test */
     public function build_with_parameters()
     {
-        $session = (new AdwordsSession())->oAuth()->build([
+        $session = (new AdwordsSession())->OAuth()->build([
             'developerToken' => 'token',
             'clientCustomerId' => 'id'
         ]);

@@ -14,9 +14,9 @@ class OAuthTest extends TestCase {
     /** @test */
     public function login_with_parameters()
     {
-        $oAuth = new OAuth2();
+        $OAuth = new OAuth2();
 
-        $refreshToken = $oAuth->userCredentials([
+        $refreshToken = $OAuth->userCredentials([
             'clientId' => 'test',
             'clientSecret' => 'test',
             'refreshToken' => 'TEST'
@@ -28,14 +28,14 @@ class OAuthTest extends TestCase {
     /** @test */
     public function build_passing_env()
     {
-        $oAuth = new OAuth2('production');
-        $this->assertInstanceOf('Google\Auth\Credentials\UserRefreshCredentials',$oAuth->userCredentials());
+        $OAuth = new OAuth2('production');
+        $this->assertInstanceOf('Google\Auth\Credentials\UserRefreshCredentials',$OAuth->userCredentials());
     }
 
     /** @test */
     public function get_full_authorization_uri()
     {
-        $oAuth = new OAuth2();
-        $this->assertInternalType('string',$oAuth->build()->buildFullAuthorizationUri()->getQuery());
+        $OAuth = new OAuth2();
+        $this->assertInternalType('string',$OAuth->build()->buildFullAuthorizationUri()->getQuery());
     }
 }

@@ -10,58 +10,57 @@ class GoogleAdsTest extends TestCase {
 
 
     /** @test */
-    public function set_env(){
+    public function setAccessLevel(){
 
         $ads = new GoogleAds();
 
         $ads->setAccessLevel('test');
 
-        $this->assertEquals('test',$ads->getAccessLevel());
+        $this->assertEquals('test', $ads->getAccessLevel());
     }
 
     /** @test */
-    public function oAuth()
+    public function OAuth()
     {
         $ads = new GoogleAds();
 
-        $ads->oAuth();
+        $ads->OAuth();
 
-        $this->assertInstanceOf('Google\Auth\Credentials\UserRefreshCredentials',$ads->getUserCredentials());
+        $this->assertInstanceOf('Google\Auth\Credentials\UserRefreshCredentials', $ads->getUserCredentials());
     }
 
     /** @test */
-    public function oAuth_passing_parameters()
+    public function OAuthParameters()
     {
         $ads = new GoogleAds();
 
-        $ads->oAuth([
-            'clientId' => 'test',
-            'clientSecret' => 'test',
-            'refreshToken' => 'TEST'
-
+        $ads->OAuth([
+            'clientId'      => 'test',
+            'clientSecret'  => 'test',
+            'refreshToken'  => 'TEST'
         ]);
 
-        $this->assertInstanceOf('Google\Auth\Credentials\UserRefreshCredentials',$ads->getUserCredentials());
+        $this->assertInstanceOf('Google\Auth\Credentials\UserRefreshCredentials', $ads->getUserCredentials());
     }
 
     /** @test */
-    public function create_session()
+    public function createSession()
     {
         $ads = new GoogleAds();
 
         $session = $ads->session();
 
-        $this->assertInstanceOf(Google\AdsApi\AdWords\AdWordsSession::class,$session->getSession());
+        $this->assertInstanceOf(Google\AdsApi\AdWords\AdWordsSession::class, $session->getSession());
     }
 
     /** @test */
-    public function create_instance_of_service()
+    public function createServiceInstance()
     {
         $ads = new GoogleAds();
 
         $ads = $ads->service(CampaignService::class);
 
-        $this->assertInstanceOf(CampaignService::class,$ads->getService());
+        $this->assertInstanceOf(CampaignService::class, $ads->getService());
     }
 
     /** @test */
@@ -75,13 +74,13 @@ class GoogleAdsTest extends TestCase {
     }
 
     /** @test */
-    public function instance_adGroup_service()
+    public function adGroupServiceInstance()
     {
         $ads = new GoogleAds();
 
         $adGroup = $ads->adGroupService();
 
-        $this->assertInstanceOf(AdGroupService::class,$adGroup->getService());
+        $this->assertInstanceOf(AdGroupService::class, $adGroup->getService());
     }
 
     /** @test */

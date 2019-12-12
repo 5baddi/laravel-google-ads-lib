@@ -18,7 +18,7 @@ class AdwordsSession
     /**
      * @var
      */
-    protected $oAuth2Credential;
+    protected $OAuth2Credential;
 
     /**
      * Adwords config data based on the environment.
@@ -28,15 +28,15 @@ class AdwordsSession
 
     /**
      * AdwordsSession constructor.
-     * @param $oAuth2Credential
+     * @param $OAuth2Credential
      * @param null $env
      */
-    function __construct($oAuth2Credential = null, $env = null)
+    function __construct($OAuth2Credential = null, $env = null)
     {
-        if($oAuth2Credential)
-            $this->oAuth2Credential = $oAuth2Credential;
+        if($OAuth2Credential)
+            $this->OAuth2Credential = $OAuth2Credential;
 
-        $this->adsConfig = e_ads_config_google_ads($env);
+        $this->adsConfig = googleAdsConfig($env);
     }
 
     /**
@@ -46,9 +46,9 @@ class AdwordsSession
      * @param array|null $data
      * @return $this
      */
-    public function oAuth($env = null, $data = [])
+    public function OAuth($env = null, $data = [])
     {
-        $this->oAuth2Credential = (new OAuth2($env))->userCredentials($data);
+        $this->OAuth2Credential = (new OAuth2($env))->userCredentials($data);
 
         return $this;
 
@@ -62,8 +62,8 @@ class AdwordsSession
      */
     public function build(array $data = [])
     {
-        if(!$this->oAuth2Credential)
-            $this->oAuth();
+        if(!$this->OAuth2Credential)
+            $this->OAuth();
 
         $data = $this->mergeData($data);
 
@@ -71,7 +71,7 @@ class AdwordsSession
 
         return $adwordsSession->withDeveloperToken($data['developerToken'])
                 ->withClientCustomerId($data['clientCustomerId'])
-                ->withOAuth2Credential($this->oAuth2Credential)
+                ->withOAuth2Credential($this->OAuth2Credential)
                 ->build();
     }
 
@@ -79,15 +79,15 @@ class AdwordsSession
      * Construct an API session from OAuth2
      *
      * @param string $developerToken
-     * @param \Google\Auth\Credentials\UserRefreshCredentials $oAuth2Credential
+     * @param \Google\Auth\Credentials\UserRefreshCredentials $OAuth2Credential
      * @return mixed
      */
-    public function buildWithOAuth($developerToken, $oAuth2Credential)
+    public function buildWithOAuth($developerToken, $OAuth2Credential)
     {
         $adwordsSession = new AdWordsSessionBuilder();
 
         return $adwordsSession->withDeveloperToken($developerToken)
-            ->withOAuth2Credential($oAuth2Credential)
+            ->withOAuth2Credential($OAuth2Credential)
             ->build();
     }
 

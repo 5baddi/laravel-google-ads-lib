@@ -22,16 +22,16 @@ class OAuth2
      */
     protected $adsConfig;
 
-    protected $oAuthConfig;
+    protected $OAuthConfig;
 
     /**
      * OAuth2 constructor.
-     * @param null $env
+     * @param null $accessLevel
      */
-    function __construct($env = null)
+    function __construct($accessLevel = null)
     {
-        $this->adsConfig = e_ads_config_google_ads($env);
-        $this->oAuthConfig = e_config_oauth();
+        $this->adsConfig = googleAdsConfig($accessLevel);
+        $this->OAuthConfig = OAuthConfig();
     }
 
     /**
@@ -68,7 +68,7 @@ class OAuth2
 
         ];
 
-        return new GoogleOAuth2(array_merge($this->oAuthConfig,$arrayClient));
+        return new GoogleOAuth2(array_merge($this->OAuthConfig, $arrayClient));
     }
 
     /**
@@ -78,7 +78,7 @@ class OAuth2
      */
     private function mergeData(array $data)
     {
-        return array_merge($this->adsConfig,$data);
+        return array_merge($this->adsConfig, $data);
     }
 
 }

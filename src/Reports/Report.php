@@ -39,13 +39,13 @@ class Report
     protected $query = '';
 
     /**
-     * @var string
+     * @var array
      */
     protected $fields = [];
 
     /**
      * During clause
-     * @var string
+     * @var array
      */
     protected $during = [];
 
@@ -73,7 +73,7 @@ class Report
      */
     function __construct($session = null)
     {
-        $this->session = $session ? $session : (new AdwordsSession())->oAuth()->build();
+        $this->session = $session ? $session : (new AdwordsSession())->OAuth()->build();
 
         $this->reportDownloader = new ReportDownloader($this->session);
 
@@ -300,7 +300,7 @@ class Report
     {
         $excepts = is_array($excepts) ? $excepts : func_get_args();
 
-        $this->fields = array_filter($this->fields,function($field) use($excepts){
+        $this->fields = array_filter($this->fields, function($field) use($excepts){
             return !in_array($field,$excepts);
         });
 
