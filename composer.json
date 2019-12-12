@@ -3,7 +3,7 @@
     "description": "Package helps you implement the features of your Google Ads / Adwords API",
     "keywords": ["google","adwords","ads","laravel", "lib", "google-ads"],
     "license": "MIT",
-    "version": "0.0.1-dev",
+    "version": "0.0.1",
     "authors": [
         {
             "name": "5BADDI",
